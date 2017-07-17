@@ -13,7 +13,7 @@ void InsertSort(std::vector<T>& vec)
         int j = i + 1;
         for (int scanIndex = 0; scanIndex < j; ++scanIndex) {
             if (vec[scanIndex] > vec[j]) {
-                int hold = vec[j];
+                T hold = vec[j];
                 int moveIndex = j;
                 for (; moveIndex > scanIndex; --moveIndex) {
                     vec[moveIndex] = vec[moveIndex - 1];
